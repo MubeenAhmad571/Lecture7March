@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+
+   <ImageView
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:id="@+id/iv_one"
+    android:src="@drawable/ic_arrow_back_black_24dp"
+       android:onClick="signup"
+       android:layout_marginTop="5dp"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_two"
+        android:text="Signup"
+        android:layout_marginTop="5dp"
+        android:textSize="25sp"
+        android:layout_marginStart="50dp"
+        android:textColor="@color/colorAccent"
+        android:onClick="signup"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/person"
+        android:src="@drawable/ic_person_outline_black_24dp"
+        android:layout_marginTop="50dp"
+        />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LogIn"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_below="@id/person"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:id="@+id/tv_one"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_one"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/tv_one"
+        android:hint="Enter The Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorPrimaryDark"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_background"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_two"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/et_one"
+        android:padding="10dp"
+        android:background="@drawable/btn_background"
+        android:hint="Enter The Password"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_one"
+        android:text="LogIn"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_below="@id/et_two"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_background"
+        android:layout_centerInParent="true"
+        />
+    <ProgressBar
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/signUpProgressBar"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/iv_svg"
+        android:src="@drawable/ic_wave_"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

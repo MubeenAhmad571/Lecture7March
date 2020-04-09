@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".UploadImage">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/top_svg"
+        android:src="@drawable/ic_wave"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/upload_tv"
+        android:text="Upload Image"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@id/top_svg"
+        android:textSize="40dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageNameET"
+        android:hint="enter the image name here"
+        android:layout_below="@id/upload_tv"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_background"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:maxLength="20"
+        android:maxLines="1"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/imageToUploadIV"
+        android:layout_below="@id/imageNameET"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_background"
+        android:scaleType="centerCrop"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_background"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="upload image"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textStyle="bold"
+        android:id="@+id/imageUploadingBtn"
+        android:layout_below="@id/imageToUploadIV"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_background"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:onClick="BackBtn"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textStyle="bold"
+        android:id="@+id/backbtn"
+        android:layout_below="@id/imageUploadingBtn"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/iv_svg"
+        android:src="@drawable/ic_wave_"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
